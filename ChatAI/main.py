@@ -1,6 +1,6 @@
 
 from fastapi import FastAPI
-from .routers import userservice
+from routers import userservice
 
 
 
