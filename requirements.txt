@@ -3,7 +3,7 @@ annotated-types==0.8.0
 anyio==4.15.1
 certifi==2026.7.22
 charset-normalizer==3.5.2
--e git+https://github.com/stuffprofessional928-spec/ChatAI.git@96bf3f306791c5b81dddb14dbcdabd274c93a85e#egg=ChatAI
+-e git+https://github.com/stuffprofessional928-spec/ChatAI.git@bfc1942a86bdf055c29db6ddddd777ddf544faaf#egg=ChatAI
 click==8.5.0
 dotenv==0.9.9
 fastapi==0.143.3
