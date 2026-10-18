@@ -24,7 +24,7 @@ print("api key  =======", api_key)
 
 
 def create_image(data):
-    print("request============",data)
+   # print("request============",data)
     response = requests.post(
             url=str(llm_service_url),
             headers={
@@ -34,14 +34,14 @@ def create_image(data):
             data=json.dumps(data)
     )
     result = response.json()
-    print(time.time())
-    image_type = f"output_{time.time()}" + f".{data["output"]}"
-    for i, image in enumerate(result.get("data", [])):
-        image_bytes = base64.b64decode(image["b64_json"])
-        with open(image_type, "wb") as f:
-            f.write(image_bytes)
-            
-        print(f"Saved image {i + 1}")
-    
-    
     return result
+  # print(time.time())
+   # image_type = f"output_{time.time()}" + f".{data["output"]}"
+    #for i, image in enumerate(result.get("data", [])):
+    #    image_bytes = base64.b64decode(image["b64_json"])
+    #    with open(image_type, "wb") as f:
+     #       f.write(image_bytes) 
+   
+    
+    
+   
